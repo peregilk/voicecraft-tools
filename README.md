@@ -17,9 +17,9 @@ Tokenized text: ['m', 'yː', 't', 'ɛ', 'n', 'a', '_', 'uː', 'm', '_', 't', 'ʉ
 It should also give you a status like this:
 
 ```bash
-Total number of rows in the dataset: 227240
-Total word count in the dataset: 2191506
-Total token count in the dataset: 12400734
-Average words per row: 9.644015138179897
-Average tokens per row: 54.57108783664848
+Total number of rows in the dataset: 227,240
+Total word count in the dataset: 2,191,506
+Total token count in the dataset: 12,400,734
+Average words per row: 9.64
+Average tokens per row: 54.57
 ```

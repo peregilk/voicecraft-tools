@@ -56,13 +56,15 @@ def describe_dataset(dataset_name):
                 else:
                     print(f"Skipping row {i} in {split} split due to missing 'text' field.")
 
-            print(f"\nNumber of rows in the {split} split: {rows}")
+            print(f"\nNumber of rows in the {split} split: {rows:,}")
 
-        print(f"\nTotal number of rows in the dataset: {total_rows}")
-        print(f"Total word count in the dataset: {total_words}")
-        print(f"Total token count in the dataset: {total_tokens}")
-        print(f"Average words per row: {total_words / total_rows}")
-        print(f"Average tokens per row: {total_tokens / total_rows}")
+        
+        print(f"\nTotal number of rows in the dataset: {total_rows:,}")  # Using thousand separator
+        print(f"Total word count in the dataset: {total_words:,}")  # Using thousand separator
+        print(f"Total token count in the dataset: {total_tokens:,}")  # Using thousand separator
+        print(f"Average words per row: {total_words / total_rows:.2f}")  # Rounded to 2 decimal places
+        print(f"Average tokens per row: {total_tokens / total_rows:.2f}")  # Rounded to 2 decimal places
+
 
     except Exception as e:
         print(f"An error occurred: {e}")
